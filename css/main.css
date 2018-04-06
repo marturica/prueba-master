@@ -54,12 +54,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.navbar-default {
+    background-color: #002157 !important;
+    border-color: #e7e7e7;
+}
 
-
-
-
-
-
+.logo_header a {
+    background: url(../img/logo-sprite.png) no-repeat scroll left top;
+    display: block;
+    height: 35px;
+    margin: -15px 0 0;
+    text-indent: -999em;
+    width: 200px;
+}
 
 
 
