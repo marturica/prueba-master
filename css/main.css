@@ -53,12 +53,18 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
 .navbar-default {
     background-color: #002157 !important;
     border-color: #e7e7e7;
+    height: 100px;
+    padding-top: 25px;
 }
-
+.page-header{margin-top: 110px !important;margin-left: -15px !important;margin-right: -15px !important;}
+.page-header h1{font-family: 'Roboto Condensed', sans-serif;color: #002056;font-size: 28px}
+.top-head{font-family: 'Roboto Condensed', sans-serif;font-size: 20px;margin-left: -15px;margin-right: -15px}
 .logo_header a {
     background: url(../img/logo-sprite.png) no-repeat scroll left top;
     display: block;
@@ -66,12 +72,25 @@ textarea {
     margin: -15px 0 0;
     text-indent: -999em;
     width: 200px;
+    margin-left: -15px;
 }
+.top-head{font-size: 22px;border-bottom:solid 1px #d2d2d4;padding: 20px;}
+.boxed{border:solid 1px #d2d2d4;font-size: 12px;color: #676769;}
+.boxed h2{font-size:18px;}
+.boxed ul {padding-left: 0px}
+.boxed ul li {list-style: none}
+.top-box{background-color:#f6f6f8;}
+.content-box{background-color:#ffffff; border-radius: 3px;padding: 10px;display: flow-root;}
+.left-space{width: 30%;float: left;padding-left: 5px}
+.right-space{width: 60%;float: right;padding: 20px}
 
-
-
-
-
+.content-box .left-space{width: 60%;float: left;}
+.content-box .right-space{width: 30%;float: right;}
+.notify{background-color: #f6f6f8;padding: 5px;margin-top: 30px;margin-bottom: 30px;padding: 10px }
+.notify button{float: right;margin-right: 20px;}
+.notify span{margin-top: 8px;float: left;}
+table thead{background-color:#f6f6f6;}
+table tbody{font-size:11px;font-weight: bolder;}
 
 
 
