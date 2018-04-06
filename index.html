@@ -13,12 +13,14 @@
     	<link href="css/bootstrap.min.css" rel="stylesheet">
     	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     	<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    	<link rel="Shortcut Icon" type="image/x-icon" href="favicon.ico"/>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
    		<!--[if lt IE 9]>
       	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     	<![endif]-->
+    	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker-standalone.css" rel="stylesheet">
     	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 
@@ -40,6 +42,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Enlace 1</a></li>
+            <li><a href="#">|</a></li>
             <li class="active"><a href="#">Enlace 2</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -52,7 +55,7 @@
 		</div>
 
     	<div class="row">
-	    	<div class="top-box boxed col-md-12">
+	    	<div class="top-box boxed col-md-12 col-xs-12">
 	    		<div class="top-head">Título Caja</div>
 	    			<div class="left-space">
 	    				<h2>Lorem Ipsum</h2>
@@ -87,10 +90,21 @@
     	</div>
     	<div class="row notify">
     		<span>Total Items: X</span> <button type="button" class="btn btn-default align-right">Abrir</button>
+    		<div class="col-md-6">
+    			 <div class="form-group">
+		            <div class='input-group date' id='datetimepicker6'>
+		                <input type='text' class="form-control" />
+		                <span class="input-group-addon">
+		                    <span class="glyphicon glyphicon-calendar"></span>
+		                </span>
+		            </div>
+		        </div>
+    		</div>
+    		<div class="col-md-6"><select><option>Seleccione...</option></select></div>
     	</div>
     	<div class="row">
   		<div class="table-responsive">
-	    	<table class="table col-md-12 ">
+	    	<table class="table col-md-12 col-xs-12">
 			  <thead>
 			    <tr>
 			      <th scope="col"></th>
@@ -190,5 +204,12 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    
+    <script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+    });
+</script>
 	</body>
 </html>
